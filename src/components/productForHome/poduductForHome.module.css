@@ -1,0 +1,16 @@
+.intro_product{
+    width: 100%;
+    margin-top: 80px;
+}
+.product_menu_title{
+    font-size: 30px;
+    padding-bottom: 40px;
+    color: rgb(80, 79, 79);
+}
+
+.product_list{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+}
+

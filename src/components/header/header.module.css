@@ -1,0 +1,33 @@
+.header{
+    width: 100%;
+    position: fixed; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    top: 0; 
+    left: 0;
+    z-index: 2;
+}
+
+.d_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.header_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 30px;
+    background-color: black;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.header_bottom_logo{
+    height:90px;
+    cursor: pointer;
+}
+

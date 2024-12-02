@@ -1,0 +1,39 @@
+.body_modal{
+    padding-top: 30px;
+ }
+
+.modal_body_info{
+    display: flex;
+    justify-content: space-between;
+}
+.modal_body_info p {
+    padding: 15px 0;
+    font-size: 20px;
+}
+.modal_body_info_img img{
+    max-width: 400px;
+}
+.modal_body_info_text{
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.nameCategories{
+    text-align: right;
+}
+
+.price{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.block_buy{
+    margin-top: 50px;
+    background-color: rgb(226, 223, 223);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}

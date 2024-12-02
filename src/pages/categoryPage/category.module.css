@@ -1,0 +1,8 @@
+.category{
+    margin-top: 160px;
+    min-height: 95vh;
+}
+.category_product{
+    display: flex;
+    flex-wrap: wrap;
+}

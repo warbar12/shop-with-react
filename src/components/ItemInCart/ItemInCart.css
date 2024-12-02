@@ -1,0 +1,15 @@
+.quantity{
+    position: absolute;
+    top: -15px;
+    right: 8px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(250, 45, 45);
+    border-radius: 15px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+}

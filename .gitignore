@@ -1,2 +1,27 @@
-/node-modules
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build output
 /build
+/dist
+
+# System files
+.DS_Store
+Thumbs.db
+
+# dotenv files
+.env
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
+
+# MacOS system files
+*.swp
+
+# IDE files
+.idea/
