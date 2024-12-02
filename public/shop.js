@@ -3,6 +3,7 @@ const data = [
     id: 1,
     categoriesId: "laptop",
     nameCategories: "Ноутбуки",
+    brend: "Apple",
     name: "Ноутбук Apple MacBook Air 13 M1 256GB 2020",
     price: 44499,
     totalPrice: 44499,
@@ -299,7 +300,7 @@ const data = [
     count: 1,
     img: "https://content.rozetka.com.ua/goods/images/big/396940448.jpg",
     article: "12344",
-    color: "Iron Grey"
+    color: "Grey"
   },
   {
     id: 26,

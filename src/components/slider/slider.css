@@ -1,0 +1,55 @@
+.slider{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.slider-container {
+    width: 85%; /* Ширина контейнера (можно настроить под свои нужды) */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 20px 0; /* Отступы сверху и снизу */
+
+}
+  
+
+.slick-slide img {
+    width: 90%; /* Изображения будут растягиваться на 100% ширины слайдера */
+    height: 500px;
+    border-radius: 4px; /* Сглаживаем углы изображений */
+    object-fit: cover; 
+    margin: 0 auto;
+  }
+  
+
+.slick-dots {
+    bottom: -45px; 
+  }
+  
+.slick-dots li button:before {
+    font-size: 16px; 
+    color: #000000;
+}
+  
+.slick-dots li.slick-active button:before {
+    color: #000000; 
+}
+  
+
+.custom-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.prev-arrow {
+    left: 10px;
+}
+  
+.next-arrow {
+    right: 10px;
+}
+  
