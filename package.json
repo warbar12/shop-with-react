@@ -1,7 +1,6 @@
 {
   "name": "shop",
   "version": "0.1.0",
-  "homepage": "https://warbar12.github.io/shop-with-react",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
