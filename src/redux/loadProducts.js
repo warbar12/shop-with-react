@@ -1395,7 +1395,7 @@ const products = [
 
   {
     id: 20,
-    categoriesId: "phones",
+    categoriesId: "phone",
     nameCategories: "Телефоны",
     name: "Samsung Galaxy M54 5G 8/256GB Dark Blue",
     brend: "Samsung",

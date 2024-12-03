@@ -1,0 +1,27 @@
+.description_table{
+	margin-top: 30px;
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.description_table th {
+	font-weight: bold;
+	width: 200px;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.description_table td{
+	padding: 5px 10px;
+	min-width: 419px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+.description_table tbody tr:nth-child(odd){
+	background: #fff;
+}
+.description_table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
