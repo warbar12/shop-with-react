@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './modal.module.css';
 
 const Modal = ({ isOpen, onClose, children }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('modal-open'); // Останавливаем прокрутку 
+    } else {
+      document.body.classList.remove('modal-open'); // Включаем прокрутку 
+    }
+
+    return () => {
+      document.body.classList.remove('modal-open'); // Очистка при размонтировании
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
