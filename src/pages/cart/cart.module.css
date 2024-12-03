@@ -5,7 +5,9 @@
 
 .cart_wrapper {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .product_info {
@@ -33,13 +35,6 @@
 
 .cart_order_information_block {
     width: 420px;
-}
-
-.cart_order_information_block h4 {
-    font-size: 22px;
-}
-
-.cart_order_information_block p {
     font-size: 22px;
 }
 
@@ -48,12 +43,20 @@
     cursor: pointer;
 }
 .wrapper_counter{
-    margin: 15px 0;
-    font-size: 20px;
-    width: 120px;
+    width: 190px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+
+.counter_block{
+    margin: 15px 0;
+    font-size: 22px;
+    width: 120px ;
+    display: flex;
+    justify-content: space-around;
+}
+
 .counter:nth-child(2n+1){
     padding: 5px 10px;
     border: 1px solid lightgray;

@@ -95,14 +95,9 @@ const cartSlice = createSlice({
       const product = state.itemsInCart.find(
         (item) => item.id === action.payload
       );
-      if (product && product.count > 1) {
+      if (product && product.count > 0) {
         product.count -= 1;
-      } else if (product) {
-        state.itemsInCart = state.itemsInCart.filter(
-          (item) => item.id !== action.payload
-        ); // Если количество товара стало 0, удаляем его из корзины
-      }
-
+      } 
       const totals = calculateTotals(state.itemsInCart);
       state.totalItemCount = totals.totalItemCount;
       state.totalPriceCount = totals.totalPriceCount;
@@ -110,7 +105,6 @@ const cartSlice = createSlice({
     },
     
     clearStor: () => initialState
-    
   },
 });
 

@@ -1,30 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
-import style from "./cart.module.css";
+import Eye from "./../../components/eye/index";
 import Button from "../../components/button";
+import Modal from "./../../components/modal/Modal";
+import BodyModal from "./../../components/modal/bodyModal/index";
 import {
   delItemInCart,
   increaseCountProduct,
   reductionCountProduct,
 } from "../../redux/cart/reducer";
+import style from "./cart.module.css";
 
 const Cart = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const items = useSelector((state) => state.cart.itemsInCart) || [];
   const totalItemCount = useSelector((state) => state.cart.totalItemCount);
   const totalPriceCount = useSelector((state) => state.cart.totalPriceCount);
   const dispatch = useDispatch();
 
+  const openModal = (product) => {
+    setSelectedProduct(product); 
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+    setIsModalOpen(false);
+  };
+
   const removeProductFromBasket = (productID) => {
     dispatch(delItemInCart(productID));
   };
 
-  const increase = (item) => {
-    dispatch(increaseCountProduct(item));
+  const increase = (id) => {
+    dispatch(increaseCountProduct(id));
   };
 
-  const decrease = (item) => {
-    dispatch(reductionCountProduct(item));
+  const decrease = (id) => {
+    dispatch(reductionCountProduct(id));
   };
 
   return (
@@ -41,6 +56,7 @@ const Cart = () => {
                   <div className={style.cart_order_information_block}>
                     <h4>{item.name}</h4>
                     <div className={style.wrapper_counter}>
+                      <div className={style.counter_block}>
                       <span
                         className={style.counter}
                         onClick={() => decrease(item.id)}
@@ -54,6 +70,10 @@ const Cart = () => {
                       >
                         &gt;
                       </span>
+                      </div>
+                     <div>
+                     <Eye product={item} openModal={() => openModal(item)} />
+                     </div>
                     </div>
                     <p>Цена: {item.price}₴</p>
                   </div>
@@ -91,6 +111,12 @@ const Cart = () => {
             ) : null}
           </aside>
         </div>
+
+        {isModalOpen && (
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
+            <BodyModal product={selectedProduct} /> 
+          </Modal>
+        )}
       </div>
     </div>
   );

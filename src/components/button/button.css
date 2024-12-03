@@ -2,12 +2,13 @@
     border-radius: 15px;
     color: #fff;
     border: none;
-    padding: 5px;
+    padding: 4px;
     cursor: pointer;
 }
+
 .btn-secondary{
     background-color: rgb(85, 88, 237);
-    padding: 8px 13px;
+    padding: 6px 11px;
     transition: 0.3s linear;
 }
 
