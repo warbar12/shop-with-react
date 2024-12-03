@@ -176,37 +176,37 @@ const Table = ({ product }) => {
           <tr>
             <td>Экран</td>
             <td>
-              Диагональ: {product.description.screen.diagonal}, 
-              Частота обновления: {product.description.screen.refreshRate}, 
-              Тип: {product.description.screen.type}, 
-              Разрешение: {product.description.screen.resolution}, 
-              Покрытие: {product.description.screen.coating}
+              Диагональ: {product?.description?.screen?.diagonal}, 
+              Частота обновления: {product?.description?.screen?.refreshRate}, 
+              Тип: {product.description.screen?.type}, 
+              Разрешение: {product?.description?.screen?.resolution}, 
+              Покрытие: {product?.description?.screen?.coating}
             </td>
           </tr>
           <tr>
             <td>Процессор</td>
-            <td>{product.description.processor.type}</td>
+            <td>{product?.description?.processor?.type}</td>
           </tr>
           <tr>
             <td>Операционная система</td>
-            <td>{product.description.processor.operatingSystem}</td>
+            <td>{product?.description?.processor?.operatingSystem}</td>
           </tr>
           <tr>
             <td>Оперативная память</td>
-            <td>{product.description.ram.size}</td>
+            <td>{product?.description?.ram?.size}</td>
           </tr>
           <tr>
             <td>Хранение</td>
-            <td>Тип: {product.description.storage.type}, Вместимость: {product.description.storage.capacity}</td>
+            <td>Тип: {product?.description?.storage?.type}, Вместимость: {product?.description?.storage?.capacity}</td>
           </tr>
           <tr>
             <td>Камеры</td>
             <td>
-              Основная: {product.description.camera.main}, 
-              Широкоугольная: {product.description.camera.ultraWide}, 
-              Телеобъектив: {product.description.camera.telephoto}, 
-              Фронтальная: {product.description.camera.front}, 
-              Дополнительные функции: {product.description.camera.additionalFeatures.join(', ')}
+              Основная: {product?.description?.camera?.main}, 
+              Широкоугольная: {product?.description?.camera?.ultraWide}, 
+              Телеобъектив: {product?.description?.camera?.telephoto}, 
+              Фронтальная: {product?.description?.camera?.front}, 
+              Дополнительные функции: {product?.description?.camera?.additionalFeatures?.join(', ')}
             </td>
           </tr>
           <tr>
@@ -362,7 +362,7 @@ const Table = ({ product }) => {
                 Фронтальная: {product?.description?.camera?.front || "Не указано"}, 
                 Особенности:{" "}
                 {Array.isArray(product?.description?.camera?.features)
-                  ? product.description.camera.features.join(", ")
+                  ? product?.description?.camera?.features.join(", ")
                   : "Не указано"}
               </td>
             </tr>

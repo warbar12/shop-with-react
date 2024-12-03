@@ -142,7 +142,7 @@ const Order = () => {
                 <p className={style.error}>{errors.email.message}</p>
               )}
               <label className={style.label}>
-                Укажите город и отделение НП:
+                Укажите город для доставки и отделение почтового сервиса
                 <input
                   className={`${style.input} ${
                     errors.email ? style.inputError : ""
@@ -155,6 +155,33 @@ const Order = () => {
               {errors?.city && (
                 <p className={style.error}>{errors.city.message}</p>
               )}
+
+              <label className={style.label}>
+                Выберите сервис для доставки
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  {...register("NovaPoshta")} 
+                />
+                Нова Пошта
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  {...register("UkrPoshta")} 
+                />
+                Укр Пошта
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  {...register("MistPoshta")}
+                />
+                Meest Пошта
+              </label>
             </form>
           </div>
 
@@ -173,9 +200,13 @@ const Order = () => {
                 <span>К оплате</span>
                 <span>{totalPriceCount} ₴</span>
               </div>
-              <button type="submit"
+              <button
+                type="submit"
                 form="myForm"
-                className={style.submitButton}>Подтвердить заказ</button>
+                className={style.submitButton}
+              >
+                Подтвердить заказ
+              </button>
             </div>
 
             <div className={style.order_info_counter}>

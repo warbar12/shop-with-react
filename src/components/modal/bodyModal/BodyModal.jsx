@@ -34,7 +34,7 @@ const BodyModal = () => {
     (event, categoriesId) => {
       event.preventDefault();
 
-      const newPath = `category/${categoriesId}`;
+      const newPath = `/category/${categoriesId}`;
 
       // Проверяем, если текущий путь совпадает с новым
       if (location.pathname !== `/${newPath}`) {

@@ -38,7 +38,7 @@
     padding: 20px 0;
 }
 .modalBody_description{
-    margin-top: 60px;
+    margin: 60px 0 40px 0;
 }
 
 
@@ -47,4 +47,4 @@
     font-size: 20px;
     border: 1px solid lightgray;
     cursor: pointer;
-}
+  }
