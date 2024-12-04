@@ -83,7 +83,6 @@ const data = [
       brandRegistrationCountry: "США",
       warranty: "12 місяців офіційної гарантії від виробника",
     },
->>>>>>> d179cf716ba930ea1967c7d25dacb5da737d248e
   },
   {
     id: 2,
