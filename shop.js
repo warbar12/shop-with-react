@@ -9,7 +9,7 @@ const data = [
     count: 1,
     img: "https://content1.rozetka.com.ua/goods/images/big/144249716.jpg",
     article: "123456789",
-    color: "Space Gray"
+    color: "Space Grayy"
   },
   {
     id: 2,
